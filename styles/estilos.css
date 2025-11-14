@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background: #1f2833;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+.formulario{
+    background: #0b0c10;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label{
+    font-size: 1rem;
+}
+
+.campo input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #c5c6c7;
+    color: #000;
+    font-size: 1rem;
+}
+
+.btn-cal{
+    padding: 12px;
+    background: #66fcf1;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-cal:hover{
+    background: #45e3d8;
+}
+
+.tabla-cal{
+    background: #0b0c10;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th{
+    background: #45a29e;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background: #1f2833;
+}
+
+tbody tr:nth-child(odd){
+    background: #2b3441;
+}
+
+.resultado-box{
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: #0b0c10;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#resultado-repro ul{
+    margin-top: 10px;
+    list-style: none;
+}
+
+#resultado-repro li{
+    background: #9b2c2c;
+    margin: 7px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#resultado-repro.no-repro{
+    color: #66fcf1;
+    font-weight: bold;
+}
+
+.acciones{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.acciones button{
+    padding: 12px 18px;
+    background: #45a29e;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.acciones button:hover{
+    background: #66fcf1;
+    color: #000;
+    font-weight: bold;
+}
