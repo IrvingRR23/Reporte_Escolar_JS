@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calificaciones</title>
+        <link rel="stylesheet" href="./styles/estilos.css">
+        <link rel="icon" type="image/gif" href="./assets/redes-sociales.gif">
+    </head>
+    <body>
+        <h1>Agenda escolar</h1>
+        <div class="formulario">
+            <div class="campo">
+                <label for="nombreUser">Nombre:</label>
+                <input type="text" id="nombreUser"
+                    placeholder="Nombre Apellido">
+            </div>
+
+            <div class="campo">
+                <label for="cal1">Calificación en Matemáticas:</label>
+                <input type="number" id="cal1">
+            </div>
+
+            <div class="campo">
+                <label for="cal2">Calificación en Español:</label>
+                <input type="number" id="cal2">
+            </div>
+
+            <div class="campo">
+                <label for="cal3">Calificación en Programación:</label>
+                <input type="number" id="cal3">
+            </div>
+
+            <div class="campo">
+                <label for="cal4">Calificación en Inglés:</label>
+                <input type="number" id="cal4">
+            </div>
+
+            <button class="btn-cal" onclick="mostrarCalificaciones()">Enviar
+                Calificaciones</button>
+        </div>
+        <div class="tabla-cal">
+            <div class="titulos">
+                <h2 id="saludoAlumno">Hola!</h2>
+                <h2 id="title-cal">Tus Calificaciones son: </h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Calificacion</th>
+                    </tr>
+                </thead>
+                <tbody id="body-cal">
+                    <!-- Cambios desde el JS -->
+                </tbody>
+            </table>
+        </div>
+        <div id="resultado-promedio" class="resultado-box">Promedio</div>
+        <div id="resultado-NM" class="resultado-box">Nota Mayor</div>
+        <div id="resultado-repro" class="resultado-box">
+            <h3>Materias Reprobadas</h3>
+
+        </div>
+        <div class="acciones">
+            <button class="btn-prom" onclick="promediar()">Promediar</button>
+            <button class="btn-NM" onclick="notaMayor()">Nota Mayor</button>
+            <button class="btn-Rep" onclick="reprobadas()">Reprobadas</button>
+        </div>
+        <script src="./scripts/scripts.js"></script>
+    </body>
+</html>
